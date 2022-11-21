@@ -9,11 +9,9 @@ import GoogleMaps
 @objc class AppDelegate: FlutterAppDelegate {
 
   override func application(
-  
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: 
-    [UIApplication.LaunchOptionsKey: Any]?
-  ) -> 
+    [UIApplication.LaunchOptionsKey: Any]?) -> 
   Bool {
     GeneratedPluginRegistrant.register(with: self)
      GMSServices.provideAPIKey("Your Map Key")
@@ -24,13 +22,13 @@ import GoogleMaps
 
 #Add code in info.plist
 
-"<key> NSLocationWhenInUseUsageDescription</key>"
+<key> NSLocationWhenInUseUsageDescription</key>
 
-"<string>This app needs access to location when open.</string>"
+<string>This app needs access to location when open.</string>
 
-"<key>NSLocationAlwaysUsageDescription</key>"
+<key>NSLocationAlwaysUsageDescription</key>
 
-"<string>This app needs access to location when in the background.</string>"
+<string>This app needs access to location when in the background.</string>
 
     
 # Android Mainfiest
