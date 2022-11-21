@@ -16,9 +16,7 @@ import GoogleMaps
   ) -> 
   Bool {
     GeneratedPluginRegistrant.register(with: self)
-    
      GMSServices.provideAPIKey("Your Map Key")
-     
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
     
   }
@@ -26,13 +24,13 @@ import GoogleMaps
 
 #Add code in info.plist
 
-<key>NSLocationWhenInUseUsageDescription</key>
+"<key> NSLocationWhenInUseUsageDescription</key>"
 
-<string>This app needs access to location when open.</string>
+"<string>This app needs access to location when open.</string>"
 
-<key>NSLocationAlwaysUsageDescription</key>
+"<key>NSLocationAlwaysUsageDescription</key>"
 
-<string>This app needs access to location when in the background.</string>
+"<string>This app needs access to location when in the background.</string>"
 
     
 # Android Mainfiest
