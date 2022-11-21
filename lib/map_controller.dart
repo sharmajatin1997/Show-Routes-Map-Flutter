@@ -31,7 +31,7 @@ class MapController extends RxController {
   ) async {
     polylinePoints = PolylinePoints();
     PolylineResult result = await polylinePoints.getRouteBetweenCoordinates(
-      "AIzaSyD-hn0GgmvVVk1jsBbcTrgGj1dvIQjCX_I", // Google Maps API Key
+      "API KEY OF MAP", // Google Maps API Key
       PointLatLng(startLatitude, startLongitude),
       PointLatLng(destinationLatitude, destinationLongitude),
       travelMode: TravelMode.driving,
